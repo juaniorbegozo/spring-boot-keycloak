@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.springbootkeycloak.SpringBootKeycloakApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.136 s <<< FAILURE! - in com.example.springbootkeycloak.SpringBootKeycloakApplicationTests
+contextLoads(com.example.springbootkeycloak.SpringBootKeycloakApplicationTests)  Time elapsed: 0.026 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.keycloak.adapters.springboot.KeycloakAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@3d4eac69]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/context/embedded/EmbeddedServletContainerCustomizer
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer
+
